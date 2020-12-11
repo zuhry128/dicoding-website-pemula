@@ -1,0 +1,158 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background: #030202;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  -webkit-box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+}
+
+ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 8px;
+  padding: 8px;
+}
+
+li {
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 8px;
+  padding: 8px;
+}
+
+a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+/* jumbotron */
+.jumbotron {
+  background-color: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+}
+.caption {
+  align-items: center;
+  text-align: center;
+}
+
+.jumbotron .title, .jumbotron .explain {
+  color: #00ff00;
+  font-family: sans-serif, monospace;
+  font-weight: 100;
+}
+/* content */
+main {
+  padding: 8px;
+  margin: 8px;
+  display: flex;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  float: left;
+  width: 75%;
+}
+article {
+  display: flex;
+  background: #030202;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 16px;
+  padding: 16px;
+}
+.img {
+  padding: 8px;
+  margin: 8px;
+}
+img {
+  height: 240px;
+}
+p {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: 400;
+  color: #00ff00;
+}
+/*aside*/
+aside {
+  width: 25%;
+  margin: 16px;
+  padding: 16px;
+  height: 480px;
+  background: #0a0a0a;
+  float: right;
+  display: flex;
+  flex-direction: column;
+}
+.profile-picture, .bioData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  padding: 8px;
+  margin: 8px;
+}
+.profile-picture img {
+  width: 240px;
+  height: 240px;
+}
+/*footer*/
+footer {
+  background: #0a0a0a;
+  height: 150px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  clear: both;
+}
+footer h2 {
+  color: #00ff00;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+@media only screen and(max-width:600px) {
+  article {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+  p {
+    color: yellow;
+  }
+  aside {
+    float: left;
+    width: 100%;
+  }
+}
